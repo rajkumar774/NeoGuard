@@ -143,13 +143,13 @@ SECRET_KEY = "neoguard-secret-key-2025"
 ALGORITHM  = "HS256"
 TOKEN_EXP  = 480
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8734870673:AAHRZK95TCU-ZfUwOAHuOIa-HUABTEDQf7k")
-TELEGRAM_CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID",   "7103874501")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID",   "")
 TWILIO_SID         = os.getenv("TWILIO_SID",          "")
 TWILIO_AUTH_TOKEN  = os.getenv("TWILIO_AUTH_TOKEN",   "")
 TWILIO_FROM        = os.getenv("TWILIO_WHATSAPP_FROM","")
 TWILIO_TO          = os.getenv("TWILIO_WHATSAPP_TO",  "")
-GROQ_API_KEY       = os.getenv("GROQ_API_KEY",        "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")
+GROQ_API_KEY       = os.getenv("GROQ_API_KEY",        "")
 
 # Max 1 Telegram/WhatsApp notification per patient per 5 min (no spam)
 NOTIFY_COOLDOWNS: dict[str, float] = {}
